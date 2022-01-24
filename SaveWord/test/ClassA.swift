@@ -29,6 +29,7 @@ class ClassA: UIViewController {
     }
     func returnName()->String{
         return name ?? "nil"
+        //return name ?? "nil"
     }
 
     /*
