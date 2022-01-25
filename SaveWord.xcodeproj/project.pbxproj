@@ -21,9 +21,6 @@
 		CECBC90B277FA6450031EE52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECBC909277FA6450031EE52 /* LaunchScreen.storyboard */; };
 		CECBC913277FABA80031EE52 /* NewWordClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECBC912277FABA80031EE52 /* NewWordClass.swift */; };
 		CEF00669279B65EE0018A747 /* DetailsWordPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF00668279B65EE0018A747 /* DetailsWordPage.swift */; };
-		CEF0066C279C9B7C0018A747 /* ClassA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0066B279C9B7C0018A747 /* ClassA.swift */; };
-		CEF0066E279C9B8B0018A747 /* ClassB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0066D279C9B8B0018A747 /* ClassB.swift */; };
-		CEF00670279C9EF00018A747 /* testClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0066F279C9EF00018A747 /* testClass.swift */; };
 		CEF80C9A27878A7300BAE632 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF80C9927878A7300BAE632 /* TabBarController.swift */; };
 		CEF80CA027878CC300BAE632 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF80C9F27878CC300BAE632 /* HomePage.swift */; };
 		CEF80CA227878DD900BAE632 /* ChallengesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF80CA127878DD900BAE632 /* ChallengesPage.swift */; };
@@ -46,9 +43,6 @@
 		CECBC90C277FA6450031EE52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CECBC912277FABA80031EE52 /* NewWordClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordClass.swift; sourceTree = "<group>"; };
 		CEF00668279B65EE0018A747 /* DetailsWordPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsWordPage.swift; sourceTree = "<group>"; };
-		CEF0066B279C9B7C0018A747 /* ClassA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassA.swift; sourceTree = "<group>"; };
-		CEF0066D279C9B8B0018A747 /* ClassB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassB.swift; sourceTree = "<group>"; };
-		CEF0066F279C9EF00018A747 /* testClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testClass.swift; sourceTree = "<group>"; };
 		CEF80C9927878A7300BAE632 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CEF80C9F27878CC300BAE632 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		CEF80CA127878DD900BAE632 /* ChallengesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesPage.swift; sourceTree = "<group>"; };
@@ -125,7 +119,6 @@
 		CECBC8FA277FA6430031EE52 /* SaveWord */ = {
 			isa = PBXGroup;
 			children = (
-				CEF0066A279C9B6A0018A747 /* test */,
 				CECBC8FB277FA6430031EE52 /* AppDelegate.swift */,
 				CECBC8FD277FA6430031EE52 /* SceneDelegate.swift */,
 				CE2A3E40278448AB00F9BB58 /* extension */,
@@ -153,16 +146,6 @@
 				CECBC912277FABA80031EE52 /* NewWordClass.swift */,
 			);
 			path = " Pages";
-			sourceTree = "<group>";
-		};
-		CEF0066A279C9B6A0018A747 /* test */ = {
-			isa = PBXGroup;
-			children = (
-				CEF0066B279C9B7C0018A747 /* ClassA.swift */,
-				CEF0066F279C9EF00018A747 /* testClass.swift */,
-				CEF0066D279C9B8B0018A747 /* ClassB.swift */,
-			);
-			path = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,20 +222,17 @@
 				CECBC906277FA6430031EE52 /* SaveWord.xcdatamodeld in Sources */,
 				CEF80CA027878CC300BAE632 /* HomePage.swift in Sources */,
 				CEF80C9A27878A7300BAE632 /* TabBarController.swift in Sources */,
-				CEF0066C279C9B7C0018A747 /* ClassA.swift in Sources */,
 				CECBC913277FABA80031EE52 /* NewWordClass.swift in Sources */,
 				CE93475227930F83000CB64E /* CoreData Method.swift in Sources */,
 				CE2A3E42278448D700F9BB58 /* File.swift in Sources */,
 				CE1518E5277FB517002C23C6 /* WordModel.swift in Sources */,
 				CECBC900277FA6430031EE52 /* ViewController.swift in Sources */,
-				CEF00670279C9EF00018A747 /* testClass.swift in Sources */,
 				CECBC8FC277FA6430031EE52 /* AppDelegate.swift in Sources */,
 				CECBC8FE277FA6430031EE52 /* SceneDelegate.swift in Sources */,
 				CE93474F2792FBAF000CB64E /* ScreenFileMethod.swift in Sources */,
 				CE93475527947668000CB64E /* HomeWordCell.swift in Sources */,
 				CEF80CA227878DD900BAE632 /* ChallengesPage.swift in Sources */,
 				CEF00669279B65EE0018A747 /* DetailsWordPage.swift in Sources */,
-				CEF0066E279C9B8B0018A747 /* ClassB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
