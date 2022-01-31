@@ -18,7 +18,6 @@ class NewWordClass: UIViewController {
     @IBOutlet weak var meanWordTextField: UITextField!
     @IBOutlet weak var pronunciationWord: UITextField!
     @IBOutlet weak var englishExampleTextView: UITextView!
-    @IBOutlet weak var arabicExampleTextView: UITextView!
     @IBOutlet weak var topConstrent: NSLayoutConstraint!
     
     
@@ -56,8 +55,7 @@ class NewWordClass: UIViewController {
             self.englishExampleTextView.BorderDesign()
             self.englishExampleTextView.ShdowDesign()
 
-            self.arabicExampleTextView.BorderDesign()
-            self.arabicExampleTextView.ShdowDesign()
+        
         }
     }
     
@@ -94,13 +92,7 @@ extension NewWordClass:UITextViewDelegate{
             englishExampleTextView.text = ""
             }
         }
-        if arabicExampleTextView.isFirstResponder {
-        if arabicExampleTextView.text == "المثال بالعربي" {
-            arabicExampleTextView.textColor = .black
-            arabicExampleTextView.text = ""
-
-            }
-        }
+  
         
     }
 
@@ -110,10 +102,7 @@ extension NewWordClass:UITextViewDelegate{
             englishExampleTextView.textColor = .gray
         }
 
-        if arabicExampleTextView.text == "" {
-            arabicExampleTextView.text = "المثال بالعربي"
-            arabicExampleTextView.textColor = .gray
-        }
+  
     }
 }
 
@@ -204,9 +193,7 @@ extension NewWordClass {
         englishExampleTextView.textColor = .gray
         englishExampleTextView.text = "English example"
 
-        arabicExampleTextView.delegate = self
-        arabicExampleTextView.textColor = .gray
-        arabicExampleTextView.text = "المثال بالعربي"
+
     }
     
     func addNewWord(){
@@ -215,19 +202,16 @@ extension NewWordClass {
         guard  meanWordTextField.text != "" else {return }
         guard  pronunciationWord.text != "" else {return }
         guard  englishExampleTextView.text != "" else {return }
-        guard  englishExampleTextView.text != "English example" else {return }
-        guard  arabicExampleTextView.text != "" else {return }
-        guard  arabicExampleTextView.text != "المثال بالعربي" else {return }
+
         
         
         guard let nameWord = nameWordTextField.text else {return }
         guard let meanWord = meanWordTextField.text else {return }
         guard let pronunciationWord = pronunciationWord.text else {return }
         guard let englishExample = englishExampleTextView.text else {return }
-        guard let arabicExample = arabicExampleTextView.text else {return }
         
         DispatchQueue.global(qos: .utility).async {
-            setDate(context: self.context, id: id, nameWord: nameWord, meanWord: meanWord, pronunciationWord: pronunciationWord, englishExample: englishExample, arabicExample: arabicExample)
+            setDate(context: self.context, id: id, nameWord: nameWord, meanWord: meanWord, pronunciationWord: pronunciationWord, englishExample: englishExample)
         }
 
         

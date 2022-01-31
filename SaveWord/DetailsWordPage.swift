@@ -20,7 +20,6 @@ class DetailsWordPage: UIViewController {
 
     
     @IBOutlet weak var enExample: UITextView!
-    @IBOutlet weak var arExample: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +29,6 @@ class DetailsWordPage: UIViewController {
         pronounsWord.text = wordDetails?.pronunciationWord
         
         enExample.text = wordDetails?.exampleEnglish
-        arExample.text = wordDetails?.exampleArabic
         // Do any additional setup after loading the view.
     }
     

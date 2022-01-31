@@ -17,22 +17,21 @@ func saveData(context:NSManagedObjectContext){
     }
 }
 
-func loadData(context:NSManagedObjectContext) -> [WordsEntity]{
-    
+func loadData(complition:([WordsEntity])->()){
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var dataLoad:[WordsEntity] = []
     let request:NSFetchRequest<WordsEntity> = WordsEntity.fetchRequest()
     do {
          dataLoad = try context.fetch(request)
-        return dataLoad
+        complition(dataLoad)
     }catch let error {
         print(error.localizedDescription)
+        complition([])
     }
-
-    return dataLoad
 }
 
 
-func setDate(context:NSManagedObjectContext,id:String,nameWord:String,meanWord:String,pronunciationWord:String,englishExample:String,arabicExample:String){
+func setDate(context:NSManagedObjectContext,id:String,nameWord:String,meanWord:String,pronunciationWord:String,englishExample:String){
 
     
     DispatchQueue.global().sync {
@@ -42,7 +41,6 @@ func setDate(context:NSManagedObjectContext,id:String,nameWord:String,meanWord:S
         newWord.setValue(meanWord, forKey: "meanWord")
         newWord.setValue(pronunciationWord, forKey: "pronunciationWord")
         newWord.setValue(englishExample, forKey: "exampleEnglish")
-        newWord.setValue(arabicExample, forKey: "exampleArabic")
 
         saveData(context: context)
     }

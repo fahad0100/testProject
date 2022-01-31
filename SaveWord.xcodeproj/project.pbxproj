@@ -21,6 +21,7 @@
 		CECBC90B277FA6450031EE52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECBC909277FA6450031EE52 /* LaunchScreen.storyboard */; };
 		CECBC913277FABA80031EE52 /* NewWordClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECBC912277FABA80031EE52 /* NewWordClass.swift */; };
 		CEF00669279B65EE0018A747 /* DetailsWordPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF00668279B65EE0018A747 /* DetailsWordPage.swift */; };
+		CEF006BD279F85C00018A747 /* SingletonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF006BC279F85C00018A747 /* SingletonClass.swift */; };
 		CEF80C9A27878A7300BAE632 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF80C9927878A7300BAE632 /* TabBarController.swift */; };
 		CEF80CA027878CC300BAE632 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF80C9F27878CC300BAE632 /* HomePage.swift */; };
 		CEF80CA227878DD900BAE632 /* ChallengesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF80CA127878DD900BAE632 /* ChallengesPage.swift */; };
@@ -43,6 +44,7 @@
 		CECBC90C277FA6450031EE52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CECBC912277FABA80031EE52 /* NewWordClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordClass.swift; sourceTree = "<group>"; };
 		CEF00668279B65EE0018A747 /* DetailsWordPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsWordPage.swift; sourceTree = "<group>"; };
+		CEF006BC279F85C00018A747 /* SingletonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonClass.swift; sourceTree = "<group>"; };
 		CEF80C9927878A7300BAE632 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CEF80C9F27878CC300BAE632 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		CEF80CA127878DD900BAE632 /* ChallengesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesPage.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				CE226A462798C0C200790E18 /* Model */,
 				CECBC8FF277FA6430031EE52 /* ViewController.swift */,
 				CECBC901277FA6430031EE52 /* Main.storyboard */,
+				CEF006BC279F85C00018A747 /* SingletonClass.swift */,
 				CEF00668279B65EE0018A747 /* DetailsWordPage.swift */,
 				CEF80CA127878DD900BAE632 /* ChallengesPage.swift */,
 				CE93475327947655000CB64E /* Cell */,
@@ -222,6 +225,7 @@
 				CECBC906277FA6430031EE52 /* SaveWord.xcdatamodeld in Sources */,
 				CEF80CA027878CC300BAE632 /* HomePage.swift in Sources */,
 				CEF80C9A27878A7300BAE632 /* TabBarController.swift in Sources */,
+				CEF006BD279F85C00018A747 /* SingletonClass.swift in Sources */,
 				CECBC913277FABA80031EE52 /* NewWordClass.swift in Sources */,
 				CE93475227930F83000CB64E /* CoreData Method.swift in Sources */,
 				CE2A3E42278448D700F9BB58 /* File.swift in Sources */,

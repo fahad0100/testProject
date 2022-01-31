@@ -17,6 +17,8 @@ class TabBarController: UITabBarController {
         guard let items = tabBar.items else { return }
         items[0].title = "Home"
         items[1].title = "Challengs"
+        self.tabBar.unselectedItemTintColor = UIColor.black
+        self.tabBar.tintColor = .green
         button.backgroundColor = .clear
         button.setImage(UIImage(named: "addImage"), for: .normal)
         button.frame =  CGRect(x: getSizeScreen()[0] / 2 - 25, y: getSizeScreen()[1] - 85, width: 50, height: 50)

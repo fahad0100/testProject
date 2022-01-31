@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="WordsEntity" representedClassName="WordsEntity" syncable="YES" codeGenerationType="class">
-        <attribute name="exampleArabic" optional="YES" attributeType="String"/>
         <attribute name="exampleEnglish" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="meanWord" optional="YES" attributeType="String"/>
@@ -9,6 +8,6 @@
         <attribute name="pronunciationWord" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="WordsEntity" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="WordsEntity" positionX="-63" positionY="-18" width="128" height="104"/>
     </elements>
 </model>

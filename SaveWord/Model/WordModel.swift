@@ -15,10 +15,9 @@ struct WordStruct {
     var meanWord:String
     var pronunciationWord:String
     var englishExample:String
-    var arabicExample:String
     
     func getWordDictionary()->Dictionary<String,String>{
-        let wordDictionary = ["ID":self.id,"nameWord":self.nameWord ,"meanWord":self.meanWord ,"pronunciationWord": self.pronunciationWord,"englishExample":self.englishExample ,"arabicExample": self.arabicExample]
+        let wordDictionary = ["ID":self.id,"nameWord":self.nameWord ,"meanWord":self.meanWord ,"pronunciationWord": self.pronunciationWord,"englishExample":self.englishExample]
         return wordDictionary 
     }
     
