@@ -35,8 +35,15 @@ class ChallengesPage: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Update()
+        let nameTap = UITapGestureRecognizer(target: self, action: #selector(tapNameAction(_:)))
+        nameTap.numberOfTapsRequired = 1
+        nameWord.isUserInteractionEnabled = true
+        nameWord.addGestureRecognizer(nameTap)
+        
     }
-    
+    @objc func tapNameAction(_ sender:UITapGestureRecognizer){
+        print("here i am")
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -167,7 +174,7 @@ class ChallengesPage: UIViewController {
              
                     answer.append(x)
                 }
-                    self.questionArray.append(Qusetion(qusetion: self.allWords[question].nameWord,
+                self.questionArray.append(Qusetion(id:self.allWords[question].id,qusetion: self.allWords[question].nameWord,
                                                        trueAnswer: self.allWords[question].meanWord,
                                                        answer1: self.allWords[answer[0]].meanWord,
                                                        answer2: self.allWords[answer[1]].meanWord,
@@ -216,6 +223,7 @@ class ChallengesPage: UIViewController {
     
     
     struct Qusetion {
+        var id:String?
         var qusetion:String?
         var trueAnswer:String?
         var answer1:String?

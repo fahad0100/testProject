@@ -12,6 +12,7 @@
 		CE93474F2792FBAF000CB64E /* ScreenFileMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93474E2792FBAE000CB64E /* ScreenFileMethod.swift */; };
 		CE93475227930F83000CB64E /* CoreData Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93475127930F83000CB64E /* CoreData Method.swift */; };
 		CE93475527947668000CB64E /* HomeWordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93475427947668000CB64E /* HomeWordCell.swift */; };
+		CE98C77727A7C434006B7504 /* Deviice in Frameworks */ = {isa = PBXBuildFile; productRef = CE98C77627A7C434006B7504 /* Deviice */; };
 		CECBC8FC277FA6430031EE52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECBC8FB277FA6430031EE52 /* AppDelegate.swift */; };
 		CECBC8FE277FA6430031EE52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECBC8FD277FA6430031EE52 /* SceneDelegate.swift */; };
 		CECBC900277FA6430031EE52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECBC8FF277FA6430031EE52 /* ViewController.swift */; };
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE98C77727A7C434006B7504 /* Deviice in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +169,9 @@
 			dependencies = (
 			);
 			name = SaveWord;
+			packageProductDependencies = (
+				CE98C77627A7C434006B7504 /* Deviice */,
+			);
 			productName = SaveWord;
 			productReference = CECBC8F8277FA6430031EE52 /* SaveWord.app */;
 			productType = "com.apple.product-type.application";
@@ -195,6 +200,9 @@
 				Base,
 			);
 			mainGroup = CECBC8EF277FA6420031EE52;
+			packageReferences = (
+				CE98C77527A7C434006B7504 /* XCRemoteSwiftPackageReference "Deviice" */,
+			);
 			productRefGroup = CECBC8F9277FA6430031EE52 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -456,6 +464,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE98C77527A7C434006B7504 /* XCRemoteSwiftPackageReference "Deviice" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andrealufino/Deviice.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE98C77627A7C434006B7504 /* Deviice */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE98C77527A7C434006B7504 /* XCRemoteSwiftPackageReference "Deviice" */;
+			productName = Deviice;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CECBC904277FA6430031EE52 /* SaveWord.xcdatamodeld */ = {
